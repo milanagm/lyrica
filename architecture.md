@@ -43,43 +43,14 @@ LyricAA is a full-stack application that analyzes emotions from text input and p
 
 
 ### 2. Frontend Application (`/emotion-music-player`)
+most important stuff:
+- **public/index.html**:
+    - includes the static styling 
 
-#### Components:
-- **React Application**
-  - Built with Create React App
-  - Uses modern React (v18.3.1)
-  - Includes testing libraries and web vitals
+- **src/App.css and index.css**: styling 
 
-#### Dependencies:
-- React and React DOM
-- Testing libraries (Jest, React Testing Library)
-- Web Vitals for performance monitoring
-- Concurrently for running multiple scripts
-
-#### Scripts:
-- `npm start`: Starts the development server
-- `npm build`: Creates production build
-- `npm test`: Runs test suite
-- `npm eject`: Ejects from Create React App
-- `npm backend`: Starts the backend server
-- `npm dev`: Runs both frontend and backend concurrently
-
-
-
-
-### 3. HTML Interface (`index.html`)
-
-#### Components:
-- Simple HTML interface for text file uploads
-- Styled with CSS for modern look and feel
-- JavaScript for file handling and display
-
-#### Features:
-- File upload functionality
-- Text file validation
-- Real-time text display
-- Responsive design
-- Custom styling with purple theme
+- **src/App.js** & **src/EmotionMusicPlayer.js**: 
+    - calls OpenAI API and awaits response, defines window for response presentation
 
 
 
@@ -112,17 +83,6 @@ LyricAA is a full-stack application that analyzes emotions from text input and p
    - Frontend runs on default React port (3000)
    - Backend runs on uvicorn server
    - HTML interface can be served separately
-
-2. **Testing**:
-   - Frontend includes Jest and React Testing Library
-   - Backend can be tested using FastAPI's testing tools
-   - End-to-end testing possible through the complete stack
-
-3. **Deployment**:
-   - Frontend can be built for production using `npm run build`
-   - Backend can be deployed using standard Python deployment methods
-   - Environment variables need to be configured in production
-
 
 
 
